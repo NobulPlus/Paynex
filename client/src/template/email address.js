@@ -46,7 +46,7 @@ const Register = () => {
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(user);
-      axios.post("http://localhost:4000/api/user/signup", user).then((res) => {
+      axios.post("https://paynex-server.vercel.app/api/user/signup", user).then((res) => {
         alert(res.data.message);
         navigate("/screen3", { replace: true });
       });

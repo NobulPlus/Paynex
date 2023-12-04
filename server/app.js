@@ -21,7 +21,7 @@ const port = process.env.PORT || 3000;
 
 // Use CORS middleware
 app.use(cors({
-    origin: 'http://localhost:3000',  // Allow requests only from this origin
+    origin: 'https://paynex-server.vercel.app/',  // Allow requests only from this origin
     credentials: true,  // Allow credentials (cookies, authorization headers, etc.)
   }));
 app.use(express.json());
