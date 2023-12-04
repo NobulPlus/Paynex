@@ -59,7 +59,7 @@ const Register = () => {
       <div className="content-acc">
         <h2 className="contentHeading">Enter your email address</h2>
         <form>
-            <label htmlFor="">Your Email Address</label>
+            <label htmlFor="">Your Email Address</label><br/>
             <input
             type="email"
             name="email"
