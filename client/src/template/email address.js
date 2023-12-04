@@ -48,7 +48,7 @@ const Register = () => {
       console.log(user);
       axios.post("http://localhost:4000/api/user/signup", user).then((res) => {
         alert(res.data.message);
-        navigate("/login", { replace: true });
+        navigate("/screen3", { replace: true });
       });
     }
   }, [formErrors]);

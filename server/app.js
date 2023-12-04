@@ -19,7 +19,11 @@ const io = socketIo(server);
 const port = process.env.PORT || 3000;
 
 
-app.use(cors());
+// Use CORS middleware
+app.use(cors({
+    origin: 'http://localhost:3000',  // Allow requests only from this origin
+    credentials: true,  // Allow credentials (cookies, authorization headers, etc.)
+  }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads'));
