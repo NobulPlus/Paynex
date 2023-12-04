@@ -4,6 +4,9 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
 const moment = require('moment');
+// In your route or middleware handling the signup endpoint
+res.setHeader('Access-Control-Allow-Origin', 'https://paynex-psi.vercel.app');
+
 
 
 
